@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  background-image: url(./img/nasa_logo.png) ;
 }
 
+.nasa_logo_container {
+width:20px;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
