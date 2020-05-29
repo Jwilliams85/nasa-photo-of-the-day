@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
      <div className ="nasa_logo_container">
-     <h1>Picture Of The Day</h1>
+     <h1>Nasa Picture Of The Day</h1>
      <NasaPic/>
-    
+  
      </div>
     </div>
   );

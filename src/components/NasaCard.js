@@ -1,19 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const picContainer = styled.div`
-min-width = 50%`
+
+
 
 
 const NasaCard = ({title, date, explanation, copyright}) => {
- console.log();
     return (
-        <picContainer>
-              <h2>title = {title}</h2>
-                <p>date = {date}</p>
-                <p>explanation = {explanation}</p>
-                <p>copyright = {copyright}</p>
-        </picContainer>
+        <div className = "picture-list">
+       <h2>Title:{title}</h2>
+       <p>Date: {date}</p>
+       <p>Explanation: {explanation}</p>
+       <p>Photo by: {copyright} </p>
+      </div>
     )
 }
 export default NasaCard;

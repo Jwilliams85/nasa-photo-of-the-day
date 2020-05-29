@@ -3,10 +3,14 @@ import axios from 'axios';
 import NasaCard from './NasaCard'
 import styled from 'styled-components'
 
+
+
 const SpaceImg = styled.img `
 max-width: 90%;
-height: 20px;
+height: 50px;
 bordr-radius: 4px;`
+
+
 const NasaPic = () => {
  const [pictures, setPictures] = useState ([]);
  useEffect (() => {
@@ -21,25 +25,17 @@ const NasaPic = () => {
  
 
  return (
+   
      <div className = "pic">
-         <SpaceImg src = {pictures.url}/>
-         <NasaCard>
-        
-         
-                 title = {pictures.title}
-                date = {pictures.date}
-                explanation = {pictures.explantion}
-                copyright = {pictures.copyright}
-                </NasaCard>
-
-         {/* {pictures.map(pic => {
-             return <NasaCard date = {pic.date} />
-             })}  */}
-              
-             
+ 
+        <NasaCard
+        key={pictures.id}
+        image={pictures.title}
+        date={pictures.date}
+        explanation={pictures.explanation}
+        copyright={pictures.copyright}/>
+  
      </div>
  )
-
 }
-
 export default NasaPic;
