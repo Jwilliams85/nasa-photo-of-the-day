@@ -27,10 +27,11 @@ const NasaPic = () => {
  return (
    
      <div className = "pic">
- 
+ <SpaceImg src = {pictures.hdurl}/>
         <NasaCard
         key={pictures.id}
-        image={pictures.title}
+        
+        title = {pictures.title}
         date={pictures.date}
         explanation={pictures.explanation}
         copyright={pictures.copyright}/>
