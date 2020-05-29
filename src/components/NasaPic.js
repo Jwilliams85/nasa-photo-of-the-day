@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 
 const SpaceImg = styled.img `
-max-width: 90%;
+max-width: 100%;
 height: 50px;
 bordr-radius: 4px;`
 
@@ -27,10 +27,9 @@ const NasaPic = () => {
  return (
    
      <div className = "pic">
- <SpaceImg src = {pictures.hdurl}/>
+ <SpaceImg src = {pictures.url}/>
         <NasaCard
         key={pictures.id}
-        
         title = {pictures.title}
         date={pictures.date}
         explanation={pictures.explanation}
