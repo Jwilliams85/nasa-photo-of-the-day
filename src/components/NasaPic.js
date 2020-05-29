@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 const SpaceImg = styled.img `
 max-width: 100%;
+widtth: 80%
 height: 50px;
 bordr-radius: 4px;`
 
